@@ -1,0 +1,19 @@
+import random
+
+def generate_random_list(size, min_value, max_value):
+    random_list = [random.randint(min_value, max_value) for _ in range(size)]
+    return random_list
+
+def calculate_sum(numbers):
+    total = sum(numbers)
+    return total
+
+size = 10
+min_value = 1
+max_value = 100
+
+random_numbers = generate_random_list(size, min_value, max_value)
+print("Random Numbers:", random_numbers)
+
+sum_of_numbers = calculate_sum(random_numbers)
+print("Sum of Numbers:", sum_of_numbers)
